@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="RainType.css">
+</head>
+<body>
+    <div class="ui-bar">
+        Life: <span id="life">3</span>
+    </div>
+
+    <div class="input">
+    <input type="text" id="inputBox" autocomplete="off" placeholder="ここにタイピング" />
+    </div>
+
+    <div id="result-modal" class="modal hidden">
+    <div class="modal-content">
+        <h2>GAME OVER</h2>
+        <p>틀린 단어 목록</p>
+        <ul id="wrong-list">
+            </ul>
+        <button onclick="RetryGame()">다시 하기</button>
+    </div>
+</div>
+
+    <script src="RainDictionary.js"></script>
+    <script src="RainType.js"></script>
+</body>
+</html>
