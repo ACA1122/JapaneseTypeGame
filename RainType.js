@@ -135,7 +135,7 @@ inputbox.addEventListener("keydown", function(e) {
         if (isCorrect) {
             combo++;
 
-            if (combo >= 5) {
+            if (combo >= 3) {
                 life = Math.min(life + 1, 3);
                 combo = 0;
                 updateUI();
@@ -150,3 +150,4 @@ inputbox.addEventListener("keydown", function(e) {
 
     inputbox.value = "";
 });
+
